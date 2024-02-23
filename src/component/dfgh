@@ -1,0 +1,123 @@
+<!-- 
+
+import { useState,React, useEffect } from "react";
+const LoginFrom =()=>{
+
+
+    const data={ name:"",email:"",password:""};
+    const [inputData,setInputData]=useState(data)
+    const [flag,setFlag]=useState(false)
+    useEffect(()=>{
+        console.log("Registerd")
+    },[flag])
+function handleData(e){
+    setInputData({...inputData,[e.target.name]:e.target.value})
+    console.log(inputData)
+}
+function handleSumbit(e){
+    e.preventDefault();
+    if(!inputData.name || !inputData.email || !inputData.password)
+    {
+        alert("All Fields are Mandatory")
+    }
+    else{
+setFlag(true)
+    }
+}
+return(
+    <>
+    <pre>{(flag)?<h2 className='ui-define'>Hello{inputData.name},You've Registered Succesfully</h2>:""}</pre>
+<main className="log   container" >
+    <div className="log-img ">
+        <img src="./pho/bg.png" alt="image"/>
+    </div>
+    
+    <div className="log-frm"onSubmit={handleSubmit}>
+    <div>
+<h1>BOOK YOUR APPOINTMENT</h1>    </div>
+
+    <div>
+    <div>
+<input type="text" placeholder="enter your Name" name="name" value={inputData.name} onChange={handleData}></input>   
+ </div>
+<div>
+<input type="text" placeholder="enter your Email" name="email"value={inputData.email} onChange={handleData}></input>   
+ </div>
+<div>
+<input type="text" placeholder="enter your Password" name="password"value={inputData.password} onChange={handleData}></input>    
+</div>
+<div><button type="submit" onClick={handleSumbit}>Submit</button></div>
+    </div>
+    </div>
+
+                
+</main>
+
+    </>
+);
+};
+export default  LoginFrom;
+
+<div className="sec3">
+    <div style="text-align: center; margin-right:20px; font-family: Arial, Helvetica, sans-serif;">
+        <h1 className="mb-4" style="font-size: 40px; color:#333"></h1>
+    </div>
+  
+    <div className="agent" height="100px">
+      <div className="para"> <h4>Medical Councling</h4>
+      <p>counseling is to help the patient amplify the vision of the specific situation and discover the proper potential 
+        in dealing with the conditions of disease, in order to promote a better quality of life.</p>
+
+    </div>
+    </div>
+  
+  
+    <div className="agent" height="100px">
+      <div className="para">   <h4>Oxygen therapy</h4>
+      <p>unique mix of treatments helps us in catering various ailments. We are committed to quality as an integral part of our
+        total operations with the goal of achieving clinical excellence
+     </p>
+    </div>
+    </div>
+  
+    <div className="agent" height="100px">
+      <div className="para">  <h4>Emergency Services</h4>
+      <p>(EMS) is a branch of emergency services dedicated to providing out-of-hospital acute
+        medical care and transport to definitive care, to patients with illnesses and injuries 
+       which the patient</p>
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+     
+//  import React from "react";
+import "./App.css";
+import Menu from "./component/Menu";
+//  import Div2 from "./component/LoginFrom";
+import Div3 from "./component/Div3";
+import LoginFrom from "./component/LoginFrom";
+import Div4 from "./component/Div4";
+import Div5 from "./component/Div5";
+import Footer from "./component/Footer";
+const App =() => {
+   return (
+<div>
+   <Menu />
+   <LoginFrom />
+   <Div3 />
+   <Div4 />
+   <Div5 />
+   <Footer/>
+</div>
+   );
+}
+export default App; -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha256-2TnSHycBDAm2wpZmgdi0z81kykGPJAkiUY+Wf97RbvY=" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+  
